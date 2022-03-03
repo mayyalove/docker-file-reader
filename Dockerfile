@@ -1,6 +1,6 @@
 #######################BUILD IAMGE################
 FROM rust:1.48.0 as build
-ENV REFRESHED_AT 2021-06-17
+ENV REFRESHED_AT 2022-03-02
 RUN mkdir /app && cd /app && git clone https://github.com/smoothsea/file-reader.git && cd file-reader
 WORKDIR /app/file-reader
 RUN rustup default nightly
